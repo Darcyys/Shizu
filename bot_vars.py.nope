@@ -1,0 +1,40 @@
+"""
+    Configuraciones y variables que usara el bot.
+
+"""
+
+data = {
+
+    # TOKEN
+    "TOKEN": 'TOKEN',
+
+    # INVITACION
+    "INVITATION": 'https://discordapp.com/api/oauth2/authorize?client_id=217077567331631116&scope=bot&permissions=0',
+
+    # REDIS URL
+    "REDIS_URL": '',
+
+    # DEBUG ?
+    "DEBUG": False,
+
+    # CARPETA IMG
+    "IMG_FOLDER": "assets/images/",
+
+    # CARPETA FUENTES
+    "FONT_FOLDER": "assets/fonts/",
+
+    # CARPETA TEMP
+    "TEMP_FOLDER": "temp/",
+
+    # BOT PREFIX COMMAND
+    "COMMAND_PREFIX": ";"
+
+}
+
+
+def getpath(var):
+    try:
+        return data[var]
+    except KeyError:
+        return None
+
