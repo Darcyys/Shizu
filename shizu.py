@@ -1,6 +1,8 @@
 import discord
 from shizu_commands import *
 import inspect
+from core import Core
+from bot_vars import getpath
 
 
 class Shizu(discord.Client):

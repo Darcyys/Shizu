@@ -1,5 +1,5 @@
 from decorators import commands
-from core import *
+import os
 """
     TODO:
     - Cambiar respuestas del bot en español por dependiendo del lenguaje seleccionado.
@@ -29,6 +29,7 @@ class ShizuCommands:
 
         url = self.core.rip(msg)
         await self.shizu.send_file(message.channel, url)
+        assert os.remove(url)
 
     @commands()
     async def randomcat(self, message):
