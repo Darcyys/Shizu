@@ -1,0 +1,42 @@
+[
+  {
+    "_comment": "Informacion basica que contendra cada server donde Shizu este. Ira mutando en cuanto vea mas necesidades",
+    "shizu_db_version": "1.0",
+    "server": [{
+      "id": 123656543553,
+      "name": "PokemonCore",
+      "icon_url": "http://discord/imagenDelIconoDelServer.png/",
+      "data": [{
+        "members": [
+          {
+            "name": "member1",
+            "id": 34543436543,
+            "avatar_url": "http://discord/avatares/whatever.png/",
+            "lvl": 33,
+            "experience": 5454343543,
+            "isMod": false,
+            "isAdmin": false
+          },
+          {
+            "name": "example2",
+            "id": 5434543,
+            "avatar_url": "asdads",
+            "lvl": 11,
+            "experience": 54543534,
+            "isMod": true,
+            "isAdmin": false
+          }
+        ],
+        "config": [
+          {
+            "language": "en_US",
+            "NSFW": true,
+            "banned_commands": ["say", "sayd", "randomcat", "nsfw", "test"],
+            "mod_role": "nombreDelRolQuePodraUsarComandosDeModeracionConElBot",
+            "new_members_role": "roleName"
+          }
+        ]
+      }]
+    }]
+  }
+]
